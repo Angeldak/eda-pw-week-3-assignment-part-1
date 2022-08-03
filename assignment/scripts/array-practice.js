@@ -83,9 +83,16 @@ console.log("My only favorite foods are:", favoriteFoods);
 // 4.e (STRETCH) TODO: Replace the second food in your array
 //      with another one of your favorite foods.
 //      Then log the updated array.
+favoriteFoods[1] = "White Cake";
+console.log("New favorite foods list is:", favoriteFoods);
+//Extra Stretch with a Z item for the next stretch
+favoriteFoods.splice(1, 1, "Licorice", "Zebra cakes");
+console.log("The above method also works to replace array items:", favoriteFoods);
 
 // 4.f (STRETCH) TODO: Sort your favoriteFoods array
 //     in reverse alphabetical order. Log the array.
+favoriteFoods = favoriteFoods.sort().reverse();
+console.log("A reversed Alphebetical list:", favoriteFoods);
 
 // 4.g (STRETCH) TODO: Convert your array to a string
 //     putting the word "and" between each item.
