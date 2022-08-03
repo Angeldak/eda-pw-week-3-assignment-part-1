@@ -97,9 +97,25 @@ console.log("A reversed Alphebetical list:", favoriteFoods);
 // 4.g (STRETCH) TODO: Convert your array to a string
 //     putting the word "and" between each item.
 //     eg "tacos and pizza and pasta". Log the string.
+let newFavFoodSentence = "";
+for (i in favoriteFoods) {
+    if (!newFavFoodSentence) {
+        newFavFoodSentence = `${favoriteFoods[i]}`;
+    } else {
+        newFavFoodSentence = `${newFavFoodSentence} and ${favoriteFoods[i]}`
+    }
+}
+console.log(newFavFoodSentence);
+console.log(typeof (newFavFoodSentence));
+
+//Version 2
+let newerSentence = favoriteFoods.join(", and ");
+console.log(newerSentence);
 
 // 4.h (STRETCH) TODO: Make a new array that combines 
 //     the favorite foods array with the animals array.
 //     Then log the new array.
 //     It should look something like:
 //     ['pizza', 'pasta', 'fish', 'cat', 'bird', 'dog']
+let newArray = favoriteFoods.concat(animalArray);
+console.log("The new combined array is,", newArray);
